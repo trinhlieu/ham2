@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+    let zodiac = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    let check = prompt('Nhập tên ngôi sao')
+    let check1 = false
+
+    function search() {
+        for(let i = 0; i<star.length; i++) {
+            if (check === star[i]) {
+                check1 = true
+                alert(zodiac[i])
+            }
+        }
+        if (check1 === false)
+        alert('không có')
+    }
+    search()
+</script>
+</body>
+</html>

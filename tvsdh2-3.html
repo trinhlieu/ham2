@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt('Nhap so bat ki');
+    let display = 1
+    function factorial (num) {
+        for (let i=1; i<=num; i++) {
+            display *= i;
+        }
+        return display;
+    }
+    factorial(number);
+document.write('giai thua cua so vua chon la' + display);
+</script>
+</body>
+</html>

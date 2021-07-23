@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function characters() {
+        let str = "/*++--*//++-+....+/*-";
+        let characters1 = str.split('');
+        let crt = prompt('Nhập 1 kí tự bất kì');
+        let count = 0
+        let check = false
+        for (let i = 0; i < characters1.length; i++) {
+            if (crt === characters1[i]) {
+                check = true;
+                count += 1
+            }
+        }
+
+        if (count !== 0) {
+            return count;
+        } else {
+            return -1;
+        }
+    }
+
+    alert(characters());
+</script>
+</body>
+</html>
